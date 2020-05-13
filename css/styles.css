@@ -1,0 +1,152 @@
+/* #region Gobal settings */
+
+:root {
+    --nav-bg-color: black;
+}
+
+* {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--nav-bg-color);
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--nav-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fixedLeftNav {
+    background-color: var(--nav-bg-color);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+}
+
+.fixedLeftNav .socialNav .nav-btn:hover a {
+    color: var(--nav-bg-color);
+    background-color: gray;
+}
+
+.fixedLeftNav .socialNav .nav-btn:hover {
+    background-color: gray;
+}
+
+
+/* #endregion Gobal settings */
+
+
+/* #region  NAVIGATIONSBAR */
+
+.navigationsbar {
+    --bg-color: black;
+    --bg-color-hover: rgb(63, 63, 63);
+    --text-color: red;
+    --text-color-hover: yellowgreen;
+}
+
+.menu-link a {
+    font-size: 1rem;
+    /* border: solid 2px blue; */
+}
+
+.dropDownMenu {
+    position: relative;
+}
+
+.dropDownMenu:hover .dropDownLink {
+    display: flex;
+}
+
+.dropDownLink {
+    display: none;
+    min-width: 170px;
+    background-color: var(--bg-color);
+}
+
+.dropDownLink a {
+    padding: 1rem 2rem;
+}
+
+.dropDownLink a:hover {
+    background-color: var(--bg-color-hover);
+}
+
+
+/* #region HEADER NAVIGATIONSBAR */
+
+.headerNav {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    /* border: hotpink 2px solid; */
+}
+
+.headerNav .nav-btn {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* border: 2px solid greenyellow; */
+}
+
+.headerNav .nav-btn:hover {
+    background-color: var(--bg-color-hover);
+}
+
+.headerNav .nav-btn:hover a {
+    color: hotpink;
+}
+
+.headerNav .dropDownLink {
+    top: 100%;
+    left: 0;
+    position: absolute;
+    flex-direction: column;
+}
+
+
+/* #endregion HEADER NAVIGATIONSBAR */
+
+
+/* #region FOOTER NAVIGATIONSBAR */
+
+.vectical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerNav .nav-btn a:hover {
+    color: var(--text-color-hover);
+}
+
+.socialNav .nav-btn a:hover {
+    color: yellowgreen;
+}
+
+.vectical .nav-btn {
+    padding: 0.5rem;
+}
+
+
+/* #endregion FOOTER NAVIGATIONSBAR */
+
+
+/* #endregion  NAVIGATIONSBAR */
